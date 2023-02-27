@@ -1,0 +1,31 @@
+.Cardcha {
+  max-width: 579px;
+  width: auto;
+  height: 554px;
+  padding: 1rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 10px;
+}
+
+.Cardcha > p {
+  font-size: 20px;
+  margin: 1rem 0;
+  line-height: 35px;
+}
+
+.Cardcha2 {
+  max-width: 579px;
+  width: auto;
+  height: 680px;
+  padding: 1rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 10px;
+}
+
+
+
+.Cardcha2 > p {
+  font-size: 20px;
+  margin: 1rem 0;
+  line-height: 35px;
+}

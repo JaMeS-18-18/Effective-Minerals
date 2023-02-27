@@ -1,0 +1,12 @@
+body {
+  background-color: #F7F8FA;
+}
+.ScrnHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title {
+  color: var(--asosiy-active-rang);
+}

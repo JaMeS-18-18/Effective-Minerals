@@ -2,11 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/global.css'
+import About from './pages//About/About';
+import Maslahat from './pages/Xizmatlar/Shaxsiy Maslahat/Maslahat';
+import Savollar from './pages/Xizmatlar/Savollar/Savollar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <About/> */}
+    {/* <Maslahat/> */}
+    <Savollar/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,14 @@
+.home_card {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  box-shadow: var(--card-shadow);
+}
+
+.subtitles {
+  width: 80%;
+  margin: 3rem auto;
+  font-size: 20px;
+}

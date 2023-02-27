@@ -1,0 +1,71 @@
+
+body{
+  background-color: #F7F8FA;
+}
+.about {
+  padding: 0 15px;
+  box-shadow: var(--card-shadow);
+  min-height: auto;
+  padding: 3rem 2rem;
+}
+
+.info {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about_image {
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+  box-shadow: var(--card-shadow);
+}
+
+.Yutuqlar {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 2rem;
+}
+.cardimage {
+  padding: 1.5rem;  
+  margin: 2rem 0;
+  max-width: 350px;
+  width: auto;
+  box-shadow: var(--card-shadow);
+  background-color: #FFF;
+  
+}
+.cardimage2 {
+  margin-top: 10rem;
+}
+
+
+.icons {
+  color: var(--asosiy-active-rang);
+}
+
+.yutuqlar_text{
+  font-weight: 600;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.yutuqlar_text:hover{
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid aquamarine;
+  box-shadow: var(--card-shadow);
+}
+
+@media (max-width: 767px) {
+  .about{
+    height: 400px;
+    overflow-x: hidden;
+    padding: 1rem;
+  }
+  .cardimage {
+    width: auto;
+  }
+}

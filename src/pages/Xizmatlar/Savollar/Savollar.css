@@ -1,0 +1,29 @@
+.box {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  padding: 3rem;
+  border: 3px solid var(--asosiy-active-rang);
+}
+
+.accordion-button {
+  padding: 2rem;
+  font-size: 25px;
+  color: grey;
+}
+
+
+.accordion-body {
+  font-size: 20px;
+  padding: 2.5rem;
+
+}
+
+@media (max-width: 768px) {
+    .accordion-button {
+      font-size: 17px;
+    }
+    .accordion-body {
+      font-size: 15px;
+    }
+}

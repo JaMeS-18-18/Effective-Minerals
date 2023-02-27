@@ -1,8 +1,10 @@
 
+import "../src/assets/global.css"
+
 function App() {
   return (
-    <div>
-      Salom SoffDev
+    <div className="vontainer" > 
+      <p >salom</p>
     </div>
   );
 }

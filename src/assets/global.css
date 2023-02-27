@@ -1,3 +1,20 @@
-body{
-    
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --asosiy-rang:"#33A9A9";
+    --oq-rang:"#fff";
+    --text-color:"33A9A9";
+    --card-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+p{
+}
+.vontainer{
+    box-shadow:var(--card-shadow);
+    width: 200px;
+    height: 100px;
+    background-color: red;
+
 }

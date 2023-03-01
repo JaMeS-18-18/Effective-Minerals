@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div>
       <ScreenHeader img={HeadImage} title={"Effictive Minerals"}/>
-      <div className="container">
+      <div className="container ">
       <div className="row py-5 ">
         <div className=" col-12 col-md-8">
           <div className="about  ">

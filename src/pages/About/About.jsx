@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutIMage1 from '../../assets/About/About1.png'
 import AboutIMage2 from '../../assets/About/About2.png'
 import AboutIMage3 from '../../assets/About/About3.png'
@@ -8,7 +8,15 @@ import Footer from '../../components/Footer/Footer'
 import ScreenHeader from '../../components/ScreenHeader/ScreenHeader'
 import HeadImage from '../../assets/ScreenHeader/Header1.png'
 import './About.css'
+import WOW from 'wowjs';
+
 export default function About() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, []);
+  
   return (
     <div>
       <ScreenHeader img={HeadImage} title={"Effictive Minerals"}/>
@@ -48,24 +56,24 @@ export default function About() {
         </div>
       </div>
       <div className="Yutuqlar">
-        <h1 className='title fw-bold animate__slideInDown animate__animated'>Bizning Yutuqlar</h1>
+        <h1 className='title fw-bold animate__slideInDown wow animate__animated'>Bizning Yutuqlar</h1>
         <div className="row">
           <div className="col-md-6 col-lg-4">
-            <div className='cardimage animate__backInLeft animate__animated '>
+            <div className='cardimage animate__backInLeft wow animate__animated '>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
                 <i class="bi bi-download fs-3 mx-2 icons"></i>
               </div>
             </div>
-            <div className='cardimage animate__backInLeft animate__animated'>
+            <div className='cardimage animate__backInLeft wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
                 <i class="bi bi-download fs-3 mx-2 icons"></i>
               </div>
             </div>
-            <div className='cardimage animate__backInLeft animate__animated'>
+            <div className='cardimage animate__backInLeft wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
@@ -74,21 +82,21 @@ export default function About() {
             </div>
           </div>
           <div className="cardimage2 order-3 order-lg-2 col-md-6 col-lg-4">
-            <div className='cardimage animate__backInUp animate__animated'>
+            <div className='cardimage animate__backInUp wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
                 <i class="bi bi-download fs-3 mx-2 icons"></i>
               </div>
             </div>
-            <div className='cardimage animate__backInUp animate__animated'>
+            <div className='cardimage animate__backInUp wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
                 <i class="bi bi-download fs-3 mx-2 icons"></i>
               </div>
             </div>
-            <div className='cardimage animate__backInUp animate__animated'>
+            <div className='cardimage animate__backInUp wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
@@ -97,21 +105,21 @@ export default function About() {
             </div>
           </div>
           <div className=" order-2 order-lg-3 col-md-6 col-lg-4">
-            <div className='cardimage animate__backInRight animate__animated'>
+            <div className='cardimage animate__backInRight wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
                 <i class="bi bi-download fs-3 mx-2 icons"></i>
               </div>
             </div>
-            <div className='cardimage animate__backInRight animate__animated'>
+            <div className='cardimage animate__backInRight wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>
                 <i class="bi bi-download fs-3 mx-2 icons"></i>
               </div>
             </div>
-            <div className='cardimage animate__backInRight animate__animated'>
+            <div className='cardimage animate__backInRight wow animate__animated'>
               <img className='img-fluid' src={Sertficate} alt="" />
               <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
                 <span className='title  fs-4 mt-2'>Yuklab olish</span>

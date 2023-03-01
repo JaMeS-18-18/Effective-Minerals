@@ -13,9 +13,9 @@ export default function ScreenHeader(props) {
   return (
     <div className='ScrnHead' style={styles}>
         <div className='container ScrnHead'>
-          <h1 className="title">
+          <h3 className="title">
               {props.title}
-          </h1>
+          </h3>
       </div>
     </div>
   )

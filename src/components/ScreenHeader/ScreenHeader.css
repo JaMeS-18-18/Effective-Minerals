@@ -10,3 +10,7 @@ body {
 .title {
   color: var(--asosiy-active-rang);
 }
+
+.ScrnHead > h3 {
+  font-size: 44px;
+}

@@ -1,5 +1,10 @@
 .footer {
   width: 100%;
+  z-index: 99;
+}
+
+.Maysa {
+  z-index: -99 !important;
 }
 
 .foot_text {

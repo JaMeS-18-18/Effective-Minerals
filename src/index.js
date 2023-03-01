@@ -6,6 +6,9 @@ import './assets/global.css'
 import About from './pages//About/About';
 import Maslahat from './pages/Xizmatlar/Shaxsiy Maslahat/Maslahat';
 import Savollar from './pages/Xizmatlar/Savollar/Savollar';
+import 'animate.css';
+import Yuklash from './pages/Xizmatlar/Yuklab olish/Yuklash';
+import Aloqa from './pages/Aloqa/Aloqa';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +17,9 @@ root.render(
     {/* <App /> */}
     {/* <About/> */}
     {/* <Maslahat/> */}
-    <Savollar/>
+    {/* <Savollar/> */}
+    {/* <Yuklash/> */}
+    <Aloqa/>
   </React.StrictMode>
 );
 

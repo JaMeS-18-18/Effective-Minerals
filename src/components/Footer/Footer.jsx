@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Footer.css'
 import Maysa from '../../assets/Footer/Maysa.png'
 import Logo from '../../assets/Footer/Logo.png'
 import footer from '../../assets/Footer/Footer.png'
+import WOW from 'wowjs';
+
 export default function Footer() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, []);
   const styles = {
     backgroundImage: `url(${footer})`,
     width: "100%",
@@ -15,7 +22,7 @@ export default function Footer() {
   }
   return (
     <div>
-      <img className='img-fluid w-100' src={Maysa} alt="" />
+      <img className='img-fluid w-100 animate__slideInUp wow animate__animated Maysa' src={Maysa} alt="" />
       <div style={styles} className="footer">
         <div className="container">
         <div className="row">

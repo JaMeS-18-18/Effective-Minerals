@@ -79,3 +79,9 @@
     box-shadow: var(--card-shadow);
   }
 }
+
+.Xarita {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

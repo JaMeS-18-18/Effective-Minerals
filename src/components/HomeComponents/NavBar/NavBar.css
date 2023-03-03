@@ -1,0 +1,42 @@
+.logoImg{
+    width: 220px;
+    height: 60px;
+    object-fit: cover;
+}
+.activ{
+    background-color:var(--asosiy-rang);
+    color: #fff;
+    text-decoration: none !important;
+
+}
+.activ a{
+    color: #fff;
+    text-decoration: none !important;
+
+}
+
+.dropLink {
+    color: #000 !important;
+}
+
+dropdown-item.active, .dropdown-item:active{
+    background-color: var(--asosiy-rang) !important;
+}
+/* .activeItem{
+    color: #fff;
+} */
+.nav-item{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 0 10px;
+}
+.nav-link:focus {
+    color: #fff;
+}
+
+
+

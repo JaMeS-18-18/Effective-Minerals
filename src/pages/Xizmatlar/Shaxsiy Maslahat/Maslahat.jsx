@@ -76,7 +76,6 @@ useEffect(() => {
             </div>
           </div>
         </div>
-      <Footer/>
       </div>
   )
 }

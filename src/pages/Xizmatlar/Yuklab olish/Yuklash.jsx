@@ -30,7 +30,6 @@ export default function Yuklash() {
             </div>
           </div>
         </div>
-      <Footer/>
     </div>
   )
 }

@@ -17,7 +17,7 @@ body{
 .about_image {
   display: grid;
   place-items: center;
-  padding: 1rem 0;
+  padding: 1rem;
   box-shadow: var(--card-shadow);
 }
 

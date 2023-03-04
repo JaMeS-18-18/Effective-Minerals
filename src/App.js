@@ -12,7 +12,7 @@ import Index from "./pages/Home";
 function App() {
   return (
     <div>
-      <NavBar/>
+      <NavBar/> 
       <Outlet/>
       <Footer/>
     </div>

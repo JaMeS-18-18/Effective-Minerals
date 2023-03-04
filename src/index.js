@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import './assets/global.css'
 import About from './pages//About/About';
 import Maslahat from './pages/Xizmatlar/Shaxsiy Maslahat/Maslahat';
+import Mahsulot from './pages/Mahsulot/Mahsulot';
 import Savollar from './pages/Xizmatlar/Savollar/Savollar';
 import 'animate.css';
 import Yuklash from './pages/Xizmatlar/Yuklab olish/Yuklash';
@@ -24,6 +25,7 @@ root.render(
         <Route path='/' element={<App />}>
           <Route path='/' element={<Index/>}/>
           <Route path='/About' element={<About />} />
+          <Route path='/Mahsulot' element={<Mahsulot />} />
           <Route path='/Maslahat' element={<Maslahat />} />
           <Route path='/Savollar' element={<Savollar />} />
           <Route path='/Yuklash' element={<Yuklash />} />

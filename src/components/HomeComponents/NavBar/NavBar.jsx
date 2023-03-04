@@ -73,10 +73,11 @@ useEffect(() => {
                                     </Link>
                                 </ul>
                             </li>
-
+                            <Link to={'/Mahsulot'}>
                             <li className={`nav-item  rounded-2 px-3  ${show == 'maxsulot' ? 'activ' : ''}`} onClick={() => GoPage('maxsulot')}>
                                 <a className={`nav-link  ${show == 'maxsulot' ? '' : ''}`} aria-current="page" href="#">{t("N_mahsulot")}</a>
                             </li>
+                            </Link>
 
                             <Link to={"/Aloqa"}>
                                 <li className={`nav-item  rounded-2 px-3  ${show == 'aloqa' ? 'activ' : ''}`} onClick={() => GoPage('aloqa')}>

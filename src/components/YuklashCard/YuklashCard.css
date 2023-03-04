@@ -2,12 +2,16 @@
   max-width: 518px;
   width: auto;
   height: auto;
-  box-shadow: var(--card-shadow);
   border: 3px solid var(--asosiy-active-rang);
   border-radius: 20px;
   align-items: center;
   padding: 1rem;
   margin: 2rem 0;
+  cursor: pointer;
+}
+
+.YCard:hover {
+  box-shadow: var(--card-shadow);
 }
 
 .Icon {

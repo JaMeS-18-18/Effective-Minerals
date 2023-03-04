@@ -2,6 +2,8 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Sertficate from '../../../assets/About/Sertificate.png';
+import {useTranslation} from 'react-i18next'
+
 const Swipper = () => {
   const responsive = {
     superLargeDesktop: {
@@ -22,6 +24,8 @@ const Swipper = () => {
       items: 1
     }
   };
+  const {t} = useTranslation();
+
   const CustomDot = ({ onMove, index, onClick, active }) => {
     return (
       <li
@@ -39,7 +43,7 @@ const Swipper = () => {
           <div className='cardimage animate__backInLeft wow animate__animated '>
             <img className='img-fluid' src={Sertficate} alt="" />
             <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
               <i class="bi bi-download fs-3 mx-2 icons"></i>
             </div>
           </div>
@@ -47,22 +51,14 @@ const Swipper = () => {
           <div className='cardimage animate__backInLeft wow animate__animated '>
             <img className='img-fluid' src={Sertficate} alt="" />
             <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
               <i class="bi bi-download fs-3 mx-2 icons"></i>
             </div>
           </div>
           <div className='cardimage animate__backInLeft wow animate__animated '>
             <img className='img-fluid' src={Sertficate} alt="" />
             <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
-              <i class="bi bi-download fs-3 mx-2 icons"></i>
-            </div>
-          </div>
-
-          <div className='cardimage animate__backInLeft wow animate__animated '>
-            <img className='img-fluid' src={Sertficate} alt="" />
-            <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
               <i class="bi bi-download fs-3 mx-2 icons"></i>
             </div>
           </div>
@@ -70,7 +66,7 @@ const Swipper = () => {
           <div className='cardimage animate__backInLeft wow animate__animated '>
             <img className='img-fluid' src={Sertficate} alt="" />
             <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
               <i class="bi bi-download fs-3 mx-2 icons"></i>
             </div>
           </div>
@@ -78,14 +74,7 @@ const Swipper = () => {
           <div className='cardimage animate__backInLeft wow animate__animated '>
             <img className='img-fluid' src={Sertficate} alt="" />
             <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
-              <i class="bi bi-download fs-3 mx-2 icons"></i>
-            </div>
-          </div>
-          <div className='cardimage animate__backInLeft wow animate__animated '>
-            <img className='img-fluid' src={Sertficate} alt="" />
-            <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
               <i class="bi bi-download fs-3 mx-2 icons"></i>
             </div>
           </div>
@@ -93,7 +82,22 @@ const Swipper = () => {
           <div className='cardimage animate__backInLeft wow animate__animated '>
             <img className='img-fluid' src={Sertficate} alt="" />
             <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
-              <span className='title  fs-4 mt-2'>Yuklab olish</span>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
+              <i class="bi bi-download fs-3 mx-2 icons"></i>
+            </div>
+          </div>
+          <div className='cardimage animate__backInLeft wow animate__animated '>
+            <img className='img-fluid' src={Sertficate} alt="" />
+            <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
+              <i class="bi bi-download fs-3 mx-2 icons"></i>
+            </div>
+          </div>
+
+          <div className='cardimage animate__backInLeft wow animate__animated '>
+            <img className='img-fluid' src={Sertficate} alt="" />
+            <div className='d-flex yutuqlar_text justify-content-center align-items-center'>
+              <span className='title  fs-4 mt-2'>{t("A_yuklash")}</span>
               <i class="bi bi-download fs-3 mx-2 icons"></i>
             </div>
           </div>

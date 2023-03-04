@@ -40,3 +40,7 @@ dropdown-item.active, .dropdown-item:active{
 
 
 
+.til_btn {
+    background-color: var(--asosiy-rang);
+    color: white;
+}

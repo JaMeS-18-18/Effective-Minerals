@@ -8,8 +8,11 @@ import HederImg from "../../../assets/Home/HederImg2.png"
 import "./Heder.css"
 import { Navigation } from "swiper";
 import Button from "../../ui/Button";
+import {useTranslation} from 'react-i18next'
 
 export default function Heder() {
+    const {t} = useTranslation()
+
     return (
         <div >
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -27,11 +30,10 @@ export default function Heder() {
                                 Суперфосфат
                             </h1>
                             <p className="w-100 w-lg-75 mb-4 heder-p text-center text-lg-start fs-6">
-                                Оддий ёки аммонизацияланган суперфосфат ўғити цитрат эритмаларидан эрийдиган  самарали фосфорли ўғитлар ҳисобланади.
-                                Унинг донадорлаштилиган турлари қониқарли физик-кимёвий хоссаларига эга бўлиб тупроқ муҳитини нордонлаштирмайди.
+                                {t('H_text')}
                             </p>
                            <div className="d-flex justify-content-center justify-content-lg-start mb-3">
-                                <Button title = "Batafsil" />
+                                <Button title = {t('button')} />
                            </div>
 
                         </div>

@@ -6,15 +6,16 @@ import irasm3 from "../../../assets/Home/irasm3.png"
 import irasm4 from "../../../assets/Home/irasm4.png"
 import rootl from "../../../assets/Home/rootl.png"
 import rootr from "../../../assets/Home/rootr.png"
-
-
+import {useTranslation} from 'react-i18next'
 
 export default function Ishlatilishi() {
+  const {t} = useTranslation();
+
     return (
         <div className='container-fluid Ishlatilishistyle'>
             <div className=' py-5'>
                 <h3 className='text-center h3-sarlavha text-white fs-1'>
-                    Суперфосфатни Ишлатилиши
+                    {t("H_ishlatish")}
                 </h3>
                 <div className='row pt-3 '>
                     <div className='col-lg-6 col-md-12 col-md-12  '>
@@ -29,8 +30,7 @@ export default function Ishlatilishi() {
                     </div>
                     <div className='col-lg-6 col-md-12 col-md-12 d-flex align-items-center pe-5 ps-5 ps-lg-0'>
                         <p className='text-white fs-3 text-center text-lg-start mt-4 mt-lg-0 fs-6'>
-                            Тупроқнинг ағдарилиш пайтида кеч куз ёки
-                            эрта баҳор фаслларида маданийлаштирилган 10 м2 ер майдони учун 300-400 граммдан ёки маданийлаштирилмаган 10 м2 майдон учун 500-600 граммдан;
+                        {t("H_tuproq")}
                         </p>
 
                     </div>
@@ -46,8 +46,7 @@ export default function Ishlatilishi() {
                     <div className='col-lg-6 col-md-12 col-md-12 d-flex justify-content-center ps-5 pe-5 pe-lg-0 order-1 order-lg-0  d-flex align-items-center'>
 
                         <p className='text-white fs-3 text-center text-lg-start mt-4 mt-lg-0 fs-6'>
-                            Тупроқнинг ағдарилиш пайтида кеч куз ёки
-                            эрта баҳор фаслларида маданийлаштирилган 10 м2 ер майдони учун 300-400 граммдан ёки маданийлаштирилмаган 10 м2 майдон учун 500-600 граммдан;
+                        {t("H_O'simlik")}
                         </p>
                     </div>
                     <div className='col-lg-6 col-md-12 col-md-12 d-flex justify-content-center ps-5 pe-5 pe-lg-0 order-0 order-lg-1'>
@@ -69,8 +68,8 @@ export default function Ishlatilishi() {
                     </div>
                     <div className='col-lg-6 col-md-12 col-md-12 d-flex align-items-center pe-5 ps-5 ps-lg-0'>
                         <p className='text-white fs-3 text-center text-lg-start mt-4 mt-lg-0 fs-6'>
-                            Тупроқнинг ағдарилиш пайтида кеч куз ёки
-                            эрта баҳор фаслларида маданийлаштирилган 10 м2 ер майдони учун 300-400 граммдан ёки маданийлаштирилмаган 10 м2 майдон учун 500-600 граммдан;
+                        {t("H_ko'pyillik")}
+
                         </p>
 
                     </div>
@@ -85,8 +84,7 @@ export default function Ishlatilishi() {
                     <div className='col-lg-6 col-md-12 col-md-12 d-flex justify-content-center ps-5 pe-5 pe-lg-0 order-1 order-lg-0 d-flex align-items-center'>
 
                         <p className='text-white fs-3 text-center text-lg-start mt-4 mt-lg-0 fs-6 '>
-                            Тупроқнинг ағдарилиш пайтида кеч куз ёки
-                            эрта баҳор фаслларида маданийлаштирилган 10 м2 ер майдони учун 300-400 граммдан ёки маданийлаштирилмаган 10 м2 майдон учун 500-600 граммдан;
+                        {t("H_issiqhona")}
                         </p>
                     </div>
                     <div className='col-lg-6 col-md-12 col-md-12 d-flex justify-content-center ps-5 pe-5 pe-lg-0 order-0 order-lg-1'>

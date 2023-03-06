@@ -2,6 +2,7 @@ import React from 'react'
 import Swipper from '../Swipper/Swipper'
 import {useTranslation} from 'react-i18next'
 
+
 export default function Sertificate() {
   const {t} = useTranslation();
 

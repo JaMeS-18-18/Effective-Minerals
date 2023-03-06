@@ -3,6 +3,7 @@ import Button from '../../ui/Button'
 import "../Kompaniya/Kompaniya.css"
 import kompPhoto  from "../../../assets/Home/Kompaniyaphoto.png"
 import {useTranslation} from 'react-i18next'
+import {Link} from 'react-router-dom'
 
 export default function Kompoaniya() {
   const {t} = useTranslation();
@@ -18,8 +19,13 @@ export default function Kompoaniya() {
                         <p className='mb-2 w-100 oKompaniyaP pe-lg-5 text-center text-lg-start  my-3'>
                         {t("H_haqidaText")}
                         </p>
-                        <div className=' pt-lg-5 pt-md-0 pt-sm-0  d-flex justify-content-center justify-content-lg-start my-3'>
-                        <Button  title = {t("button")} />
+                        <div  onClick={() => {
+                            localStorage.setItem("Link", "biz")
+                            window.location.reload()
+                           }} className="d-flex justify-content-center justify-content-lg-start mb-3">
+                                <Link to={"/about"}>
+                                    <Button title = {t('button')} />
+                                </Link>
                         </div>
 
                     </div>

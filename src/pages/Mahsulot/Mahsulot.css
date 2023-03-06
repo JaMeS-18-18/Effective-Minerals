@@ -34,7 +34,7 @@ td{
     text-align: center;
 }
 
-li{
+.M_ul > li{
     margin-top: 40px;
     font-size: 24px;
     font-weight: 300;
@@ -51,7 +51,6 @@ li{
     font-size: 18px;
     background:#F7F8FA;
   
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,29 +63,11 @@ li{
     object-fit: cover;
   }
 
-/*   
-@media screen and (max-width: 970px) {
-    .oKompaniyaTitle{
-     text-align: center;
-     font-size: 50px;
-    }
-    .ass{
-     height: 200px;
-    }
-    .Okampaniya{
-    background-position: -100px -200px;
-     
-    }
-    .oKompaniyaP{
-     font-size: 20px;
- }
-    
- } */
  @media screen and (max-width: 576px) {
     .p-text-style{
         font-size: 20px;
     }
-    th , td , li{
+    th , td , .M_ul > li{
         font-size: 18px;
     }
 

@@ -49,15 +49,8 @@ body{
   font-weight: 600;
   margin: 0 1rem;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.yutuqlar_text:hover{
-  margin-top: 0.5rem;
-  border-radius: 5px;
-  border: 1px solid aquamarine;
-  box-shadow: var(--card-shadow);
-}
 
 @media (max-width: 767px) {
   .about{

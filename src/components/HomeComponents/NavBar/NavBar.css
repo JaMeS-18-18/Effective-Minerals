@@ -38,6 +38,9 @@ dropdown-item.active, .dropdown-item:active{
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 .til_btn {

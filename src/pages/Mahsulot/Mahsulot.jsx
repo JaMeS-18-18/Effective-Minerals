@@ -1,6 +1,6 @@
 import ScreenHeader from '../../components/ScreenHeader/ScreenHeader'
 import HeadImage from '../../assets/ScreenHeader/Header2.png'
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import mahsulotimg1 from "../../assets/Mahsulotlar/preview 1.png"
 import mahsulotimg2 from "../../assets/Mahsulotlar/preview 2.png"
@@ -8,7 +8,7 @@ import mahsulotimg3 from "../../assets/Mahsulotlar/preview 3.png"
 import mahsulotimg4 from "../../assets/Mahsulotlar/preview 4.png"
 import mahsulotimg5 from "../../assets/Mahsulotlar/preview 5.png"
 import mahsulotimg6 from "../../assets/Mahsulotlar/preview 6.png"
-
+import {Link} from 'react-router-dom'
 
 
 import "swiper/css";
@@ -19,8 +19,10 @@ import { Navigation } from "swiper";
 
 import "./Mahsulot.css"
 import Button from '../../components/ui/Button'
+import { useTranslation } from 'react-i18next';
 
 export default function Mahsulot() {
+    const { t } = useTranslation()
     return (
         <div className='' >
             <ScreenHeader img={HeadImage} title={"Суперфосфат"} />
@@ -28,12 +30,13 @@ export default function Mahsulot() {
                 <div className='row py-lg-5 py-3'>
                     <div className='col-lg-6 col-md-12 col-sm-12 p-2'>
                         <h3 className='mb-5 text-center text-lg-start fs-1 '>
-                            Суперфасфат асосан монокалсий фосфат , Cа(Ҳ 2 ПО 4 ) 2 дан иборат.
+                            {t("M_subtitle")}
                         </h3>
                         <div className='row'>
                             <div className='col-6 d-flex align-items-center '>
                                 <p className='mb-0 fs-4'>
-                                    Қадоқ:
+                                    {t("M_qadoq")}
+
                                 </p>
                             </div>
                             <div className='col-6 d-flex'>
@@ -44,7 +47,8 @@ export default function Mahsulot() {
                         <div className='row mt-4'>
                             <div className='col-6 d-flex align-items-center '>
                                 <p className='mb-0 fs-4'>
-                                    Ишлаб чиқариш:
+                                    {t("M_ish")}
+
                                 </p>
                             </div>
                             <div className='col-6 d-flex align-items-center'>
@@ -54,7 +58,8 @@ export default function Mahsulot() {
                         <div className='row mt-4'>
                             <div className='col-6 d-flex align-items-center '>
                                 <p className='mb-0 fs-4'>
-                                    Шакли:
+                                    {t("M_shakl")}
+
                                 </p>
                             </div>
                             <div className='col-6 d-flex align-items-center'>
@@ -63,7 +68,8 @@ export default function Mahsulot() {
                         </div>
                         <div className='mt-4' >
                             <p className='mb-0 fs-4'>
-                                Таркиби:  </p>
+                                {t("M_tarkib")}
+                            </p>
                             <table class="table table-striped table-bordered table-hover mt-2">
 
                                 <tbody>
@@ -97,20 +103,20 @@ export default function Mahsulot() {
                                 <img src={mahsulotimg1} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <img src={mahsulotimg2} />
+                                <img src={mahsulotimg2} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <img src={mahsulotimg3} />
+                                <img src={mahsulotimg3} />
 
                             </SwiperSlide>
                             <SwiperSlide>
-                            <img src={mahsulotimg4} />
+                                <img src={mahsulotimg4} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <img src={mahsulotimg5} />
+                                <img src={mahsulotimg5} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <img src={mahsulotimg6} />
+                                <img src={mahsulotimg6} />
                             </SwiperSlide>
                         </Swiper>
 
@@ -119,19 +125,24 @@ export default function Mahsulot() {
                 </div>
                 <div className='row'>
                     <div className='col-lg-2 col-md-12 col-sm-12' >
-                        <span className='fs-4' >Илова:</span>
+                        <span className='fs-4' >                            {t("M_ilova")}
+                        </span>
                     </div>
                     <div className='col-lg-10 col-md-12 col-sm-12' >
                         <span className='p-text-style'>
-                            СУПЕРФОСФAТ МAКОСҲ з микроелементами (Б, Зн) универсал ўғит бўлиб, у асосий, екиш олдидан ишлов бериш ва екиш учун ишлатилиши мумкин.
-                        </span>
+                            <span className='fs-4' >  
+                              {t("M_ilova_t")}
+
+                            </span>
+                            </span>
                     </div>
                     <div className='col-lg-2 col-md-12 col-sm-12 mt-5' >
-                        <span className='fs-4' >ДОСТАВКА::</span>
+                        <span className='fs-4' >ДОСТАВКА:</span>
                     </div>
                     <div className='col-lg-10 col-md-12 col-sm-12 mt-5' >
                         <span className='p-text-style'>
-                            Йетказиб бериш нархи индивидуал равишда ҳисобланади ҳажми ва ҳудудига қараб
+                        {t("M_dostavka")}
+
                         </span>
                     </div>
                 </div>
@@ -191,25 +202,34 @@ export default function Mahsulot() {
                 </div>
                 <div>
                     <span className='fs-4'>
-                        ХУСУСИЙAТЛAРИ::
+                    {t("M_hususiyat")}
+
                     </span>
                     <div className='mt-2 py-2'>
-                        <ul>
+                        <ul className='M_ul'>
                             <li>
-                                Ўғит қишлоқ хўжалиги екинларининг илдиз тизимининг яхши ривожланишига ҳисса қўшади, гуллаш ва меваларнинг пишишига ижобий таъсир кўрсатади ва қурғоқчиликка чидамлилигини оширади.
+                            {t("M_hususiyat1")}
+
                             </li>
                             <li>
-                                Ўғитда мавжуд бўлган Б ва Зн микроелементлари вегетация бошида ўсимликнинг уларга бўлган еҳтиёжини таъминлайди.
+                            {t("M_hususiyat2")}
+
                             </li>
                             <li>
-                                Ўғит барча екинлар учун, ҳам асосий, ҳам екиш учун мос келади.
+                            {t("M_hususiyat3")}
+
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className='d-flex justify-content-center mt-2 mt-lg-4 '>
-                <Button title="Буюртма бериш" />
+            <div onClick={() => {
+                            localStorage.setItem("Link", "aloqa")
+                            window.location.reload()
+                           }} className='d-flex justify-content-center mt-2 mt-lg-4 my-5 '>
+                <Link to={"/aloqa"}>
+                     <Button title={t("M_buyurtma")} />
+                </Link>
             </div>
 
         </div>

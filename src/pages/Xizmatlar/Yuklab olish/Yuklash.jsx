@@ -10,8 +10,12 @@ import Pdf3 from '../../../assets/Pdf/3.pdf';
 import Pdf4 from '../../../assets/Pdf/4.pdf';
 import Pdf5 from '../../../assets/Pdf/5.pdf';
 import Pdf6 from '../../../assets/Pdf/6.pdf';
+import { useTranslation } from 'react-i18next';
+
 
 export default function Yuklash() {
+  const { t } = useTranslation()
+
   const downloadPdf = (num) => {
     fetch(num)
       .then(response => response.blob())
@@ -20,37 +24,37 @@ export default function Yuklash() {
   };
   return (
     <div>
-      <ScreenHeader title={"Yuklab Olish"} img={HeadImage}/>
+      <ScreenHeader title={t("Y_title")} img={HeadImage}/>
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div onClick={() => downloadPdf(Pdf1)} className="">
-                <YuklashCard title={"Superfosfat oʼgʼitini ishlatishka doir qollanma"} icon={<i class="bi bi-download"></i>} />
+                <YuklashCard title={t("Y_1")} icon={<i class="bi bi-download"></i>} />
               </div>
             </div>
             <div className="col-md-6">
               <div onClick={() => downloadPdf(Pdf2)} className="">
-                <YuklashCard title={"Superfosfat oʼgʼitini ishlatishka doir qollanma"} icon={<i class="bi bi-download"></i>} />
+                <YuklashCard title={t("Y_2")} icon={<i class="bi bi-download"></i>} />
               </div>
             </div>
             <div className="col-md-6">
               <div onClick={() => downloadPdf(Pdf3)} className="">
-                <YuklashCard title={"Superfosfat oʼgʼitini ishlatishka doir qollanma"} icon={<i class="bi bi-download"></i>} />
+                <YuklashCard title={t("Y_3")} icon={<i class="bi bi-download"></i>} />
               </div>
             </div>
             <div className="col-md-6">
               <div onClick={() => downloadPdf(Pdf4)} className="">
-                <YuklashCard title={"Superfosfat oʼgʼitini ishlatishka doir qollanma"} icon={<i class="bi bi-download"></i>} />
+                <YuklashCard title={"СУПЕРФОСФАТ"} icon={<i class="bi bi-download"></i>} />
               </div>
             </div>
             <div className="col-md-6">
               <div onClick={() => downloadPdf(Pdf5)} className="">
-                <YuklashCard title={"Superfosfat oʼgʼitini ishlatishka doir qollanma"} icon={<i class="bi bi-download"></i>} />
+                <YuklashCard title={"СУПЕРФОСФАТ-2"} icon={<i class="bi bi-download"></i>} />
               </div>
             </div>
             <div className="col-md-6">
               <div onClick={() => downloadPdf(Pdf6)} className="">
-                <YuklashCard title={"Superfosfat oʼgʼitini ishlatishka doir qollanma"} icon={<i class="bi bi-download"></i>} />
+                <YuklashCard title={"ПРОСТОЙ АММОНИЗИРОВАННЫЙ"} icon={<i class="bi bi-download"></i>} />
               </div>
             </div>
           </div>

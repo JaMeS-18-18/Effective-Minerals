@@ -25,7 +25,7 @@ export default function Heder() {
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 <SwiperSlide>
                     <div className="SliderBack">
-                    <img className="img-fluid" src={HederImg} />
+                    <img lazy className="img-fluid" src={HederImg} />
                     </div>
 
                     <div className="row m-0 w-100 sliderDiv">

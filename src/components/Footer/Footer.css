@@ -24,3 +24,12 @@
       height: 200px;
     }
 }
+
+.hub {
+  background-color: orange;
+  color: black;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 0 4px;
+  font-weight: 500;
+}

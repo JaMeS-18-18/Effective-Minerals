@@ -12,7 +12,7 @@ export default function Kompoaniya() {
         <div className='container-fluid  Okampaniya' >
             <div className='container'>
                 <div className='row  py-5'>
-                    <div className='col-lg-6 col-md-12 col-sm-12  h-auto d-flex flex-column justify-content-center'>
+                    <div className='col-lg-6 col-md-12 col-sm-12  h-auto d-flex flex-column justify-content-center  wow animate__animated animate__fadeInLeft'>
                         <h3 className='oKompaniyaTitle mb-lg-4 mb-md-2 mb-sm-2 text-center text-lg-start fs-1'>
                             {t("H_haqida")}
                         </h3>
@@ -29,7 +29,7 @@ export default function Kompoaniya() {
                         </div>
 
                     </div>
-                    <div className='col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pt-3 pt-lg-0' >
+                    <div className='col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pt-3 pt-lg-0  wow animate__animated animate__fadeInRight' >
                         <img src={kompPhoto} className = "kompimg img-fluid "  alt='Img'/>
 
                     </div>

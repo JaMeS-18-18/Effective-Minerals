@@ -5,16 +5,17 @@ import { Link } from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
 
 export default function NavBar() {
+    let lang = localStorage.getItem("i18nextLng")
     const {t, i18n} = useTranslation();
-    const [til, settil] = useState(true);
+    const [til, settil] = useState(lang == "uz" ? true : false);
     const [statuss, sestatuss] = useState(true);
     const [son, setSon] = useState(0);
     const [show, setShow] = useState('home')
 
-
     const changeLanguage = (tils) => {
         if(tils == "uz") settil(true)
         else settil(false)
+        console.log(lang , tils);
         i18n.changeLanguage(tils)
     }
     

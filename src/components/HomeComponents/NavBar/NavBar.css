@@ -15,6 +15,15 @@
 
 }
 
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn:focus {
+    background-color: var(--asosiy-rang);
+}
+
 .dropLink {
     color: #000 !important;
 }

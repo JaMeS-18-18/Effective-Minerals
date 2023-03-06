@@ -18,7 +18,10 @@
     background-color: red;
 }
 
+html {
+    overflow-x: hidden;
 
+}
 
 .buttonCard{
     background-image: linear-gradient(to right,#33A9A9, #32CDCD);
@@ -74,13 +77,14 @@ h3 {
 
 .home_body {
     position: relative;
+    overflow-x: hidden;
 }
 
 .call_img{
     position: fixed;
     bottom: 70px;
     right: 20px;
-    z-index: 99;
+    z-index: 9999 !important;
     width: 70px;
     height: 70px;
     cursor: pointer;
@@ -90,7 +94,7 @@ h3 {
 
 @keyframes mymove {
     0% {
-        
+
         transform: rotateY(0);
     }
     50% {
